@@ -1,10 +1,9 @@
 #!/bin/bash
+# must be run under /bin/bash or <(env) below will cause an unexpected token `('
+
 . shmod
+import dockcmd/sh v0.0.1 docker.sh
 
-include github.com/dockcmd/shmod util.sh
-
-# must be run under bash or <(env) will cause an unexpected token `('
-# to link: shln ln aws bash
 exec_or_dryrun \
   $(docker_run) \
   --env-file <(env|grep ^AWS_) \
