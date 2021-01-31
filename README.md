@@ -7,7 +7,7 @@ Shell script to run awscli via docker.
 To install aws cli via shln
 
 ```bash
-shln install github.com/dockcmd/aws-sh v0.0.1
+shln install github.com/dockcmd/aws-sh v0.0.2
 
 # requires the following directories
 mkdir -p $HOME/.aws
