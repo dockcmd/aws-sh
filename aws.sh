@@ -2,4 +2,4 @@
 . shmod
 import dockcmd/sh@v0.0.3 docker.sh
 
-run `e=^AWS_ hwd= docker dcmd/aws:v1.16.306 "$@"`
+run `e=^AWS_ hwm= docker dcmd/aws:v1.16.306 "$@"`
