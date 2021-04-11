@@ -1,5 +1,8 @@
 #!/bin/sh
 . shmod
-import dockcmd/sh@v0.0.3 docker.sh
+import github.com/dockcmd/sh@v0.0.4 docker.sh
 
-run `e=^AWS_ hwm= docker dcmd/aws:v1.16.306 "$@"`
+t9t="$t9t"
+e="${e-AWS}"
+
+docker_run dcmd/aws:v1.16.306 "$@"
